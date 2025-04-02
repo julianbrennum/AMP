@@ -160,13 +160,13 @@
         "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "Wipe Announcement 1 Hour",
+        "UpdateStageName": "Scheduled Wipe",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "Schedule",
-        "UpdateSourceData": "0 0 19 * * 4#1",
-        "UpdateSourceArgs": "say \"Server map wipe in 1 hour!\"",
+        "UpdateSource": "Scheduled",
         "UpdateSourceConditionSetting": "AutoWipeSchedule",
         "UpdateSourceConditionValue": "true",
+        "UpdateSourceData": "0 0 19 * * 4#1",
+        "UpdateSourceArgs": "say \"Map wipe in 1 hour\"",
         "SkipOnFailure": true
     }
 ]
