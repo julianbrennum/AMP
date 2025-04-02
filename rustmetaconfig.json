@@ -31,20 +31,5 @@
         "ConfigType": "kvp",
         "ConfigFormat": "{0} \"{1}\"",
         "ConfigFormatRegex": "^(?<key>.+?) \"?(?<value>.*?)\"?$"
-    },
-    {
-        "DisplayName": "Enable Auto Wipe Schedule",
-        "Category": "Rust:stadia_controller",
-        "Subcategory": "Wipes:folder_delete:3",
-        "Description": "If enabled, server will automatically wipe map on first Thursday of each month at 20:01",
-        "Keywords": "wipe,schedule,auto",
-        "FieldName": "AutoWipeSchedule",
-        "InputType": "checkbox",
-        "ParamFieldName": "AutoWipeSchedule",
-        "DefaultValue": "false",
-        "EnumValues": {
-            "False": "false",
-            "True": "true"
-        }
     }
 ]

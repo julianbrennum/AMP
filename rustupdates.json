@@ -164,7 +164,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "Schedule",
         "UpdateSourceData": "0 0 19 * * 4#1",
-        "UpdateSourceArgs": "say \"Server update map wipe in 1 hour!\"",
+        "UpdateSourceArgs": "say \"Server map wipe in 1 hour!\"",
         "UpdateSourceConditionSetting": "AutoWipeSchedule",
         "UpdateSourceConditionValue": "true",
         "SkipOnFailure": true
@@ -174,7 +174,7 @@
         "UpdateSourcePlatform": "All",
         "UpdateSource": "Schedule",
         "UpdateSourceData": "0 55 19 * * 4#1",
-        "UpdateSourceArgs": "say \"Server update and map wipe in 5 minutes!\"",
+        "UpdateSourceArgs": "say \"Server map wipe in 5 minutes!\"",
         "UpdateSourceConditionSetting": "AutoWipeSchedule",
         "UpdateSourceConditionValue": "true",
         "SkipOnFailure": true
