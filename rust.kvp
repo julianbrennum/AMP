@@ -73,7 +73,41 @@ App.RCONHeartbeatCommand=ping
 App.TelnetLoginFormat={0}
 App.UpdateSources=@IncludeJson[rustupdates.json]
 App.PreStartStages=[]
-App.UserActions=[]
+App.UserActions=[
+    {
+        "Name": "WipeAnnouncement",
+        "DisplayName": "Map Wipe Announcement",
+        "Description": "Sends a wipe announcement message to all players",
+        "Type": "RCON",
+        "Command": "say \"{Message}\"",
+        "Arguments": [
+            {
+                "Name": "Message",
+                "DisplayName": "Announcement Message",
+                "Description": "The message to announce",
+                "Type": "String",
+                "Required": true,
+                "DefaultValue": "Server wipe incoming!"
+            }
+        ]
+    },
+    {
+        "Name": "ForceMapWipe",
+        "DisplayName": "Force Map Wipe",
+        "Description": "Wipes the map and generates new seed",
+        "Type": "Shell",
+        "Command": "cd \"{{$FullBaseDir}}server/{{serveridentity}}\" && rm -f *.map && echo {{randomdigits(6)}} > seed.txt && quit",
+        "Arguments": []
+    },
+    {
+        "Name": "RestartServer",
+        "DisplayName": "Restart Server",
+        "Description": "Saves config and restarts the server",
+        "Type": "RCON",
+        "Command": "server.writecfg; quit",
+        "Arguments": []
+    }
+]
 App.ForceUpdate=False
 App.ForceUpdateReason=
 App.Compatibility=None
