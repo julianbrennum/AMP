@@ -158,5 +158,46 @@
         "UpdateSourceConditionSetting": "ModLoader",
         "UpdateSourceConditionValue": "umod",
         "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Scheduled Map Wipe",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd \\\"{{$FullBaseDir}}server/{{serveridentity}}\\\" && rm -f *.map && echo {{randomdigits(6)}} > seed.txt\"",
+        "UpdateSourceConditionSetting": "AutoWipeSchedule",
+        "UpdateSourceConditionValue": "true",
+        "UpdateSourceSchedule": "0 1 20 * * 4#1",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Wipe Announcement 1h",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "RCON",
+        "UpdateSourceData": "say \"Server map wipe in 1 hour!\"",
+        "UpdateSourceConditionSetting": "AutoWipeSchedule",
+        "UpdateSourceConditionValue": "true",
+        "UpdateSourceSchedule": "0 0 19 * * 4#1",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Wipe Announcement 30m",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "RCON",
+        "UpdateSourceData": "say \"Server map wipe in 30 minutes!\"",
+        "UpdateSourceConditionSetting": "AutoWipeSchedule",
+        "UpdateSourceConditionValue": "true",
+        "UpdateSourceSchedule": "0 30 19 * * 4#1",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Wipe Announcement 5m",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "RCON",
+        "UpdateSourceData": "say \"Server map wipe in 5 minutes!\"",
+        "UpdateSourceConditionSetting": "AutoWipeSchedule",
+        "UpdateSourceConditionValue": "true",
+        "UpdateSourceSchedule": "0 55 19 * * 4#1",
+        "SkipOnFailure": true
     }
 ]
