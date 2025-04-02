@@ -158,35 +158,5 @@
         "UpdateSourceConditionSetting": "ModLoader",
         "UpdateSourceConditionValue": "umod",
         "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Wipe Announcement 1 Hour",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "Schedule",
-        "UpdateSourceData": "0 0 19 * * 4#1",
-        "UpdateSourceArgs": "say \"Server map wipe in 1 hour!\"",
-        "UpdateSourceConditionSetting": "AutoWipeSchedule",
-        "UpdateSourceConditionValue": "true",
-        "SkipOnFailure": true
-    },
-    {
-        "UpdateStageName": "Wipe Announcement 5 Min",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "Schedule",
-        "UpdateSourceData": "0 55 19 * * 4#1",
-        "UpdateSourceArgs": "say \"Server map wipe in 5 minutes!\"",
-        "UpdateSourceConditionSetting": "AutoWipeSchedule",
-        "UpdateSourceConditionValue": "true",
-        "SkipOnFailure": true
-    },
-    {
-        "UpdateStageName": "Scheduled Map Wipe",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "Schedule",
-        "UpdateSourceData": "0 1 20 * * 4#1",
-        "UpdateSourceArgs": "-c \"cd \"{{$FullBaseDir}}server/{{serveridentity}}\" && rm -f *.map && echo {{randomdigits(6)}} > seed.txt\"",
-        "UpdateSourceConditionSetting": "AutoWipeSchedule",
-        "UpdateSourceConditionValue": "true",
-        "SkipOnFailure": false
     }
 ]
