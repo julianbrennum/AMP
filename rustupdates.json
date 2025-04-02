@@ -1,5 +1,13 @@
 [
     {
+        "UpdateStageName": "Rust Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "258550",
+        "UpdateSourceArgs": "252490",
+        "UpdateSourceVersion": "{{ServerBranch}}"
+    },
+    {
         "UpdateStageName": "Wipe Server Files",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
@@ -98,14 +106,6 @@
         "UpdateSourceConditionSetting": "ModLoader",
         "UpdateSourceConditionValue": "none",
         "SkipOnFailure": true
-    },
-    {
-        "UpdateStageName": "Rust Download",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "SteamCMD",
-        "UpdateSourceData": "258550",
-        "UpdateSourceArgs": "252490",
-        "UpdateSourceVersion": "{{ServerBranch}}"
     },
     {
         "UpdateStageName": "Carbon Download",
