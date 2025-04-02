@@ -164,7 +164,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"cd \\\"{{$FullBaseDir}}server/{{serveridentity}}\\\" && rm -f *.map && NEWSEED={{randomdigits(6)}} && echo $NEWSEED > seed.txt && echo \\\"server.seed $NEWSEED\\\" > cfg/server.cfg\"",
+        "UpdateSourceArgs": "-c \"cd \\\"{{$FullBaseDir}}server/{{serveridentity}}\\\" && rm -f *.map && NEWSEED=$(shuf -i 100000-999999 -n 1) && echo \\\"$NEWSEED\\\" > seed.txt && echo \\\"server.seed \\\\\\\"$NEWSEED\\\\\\\"\\\" > cfg/server.cfg\"",
         "UpdateSourceConditionSetting": "AutoWipeSchedule",
         "UpdateSourceConditionValue": "true",
         "SkipOnFailure": false
