@@ -158,5 +158,15 @@
         "UpdateSourceConditionSetting": "ModLoader",
         "UpdateSourceConditionValue": "umod",
         "DeleteAfterExtract": true
+    },
+    {
+        "UpdateStageName": "Wipe Announcement 1 Hour",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "Schedule",
+        "UpdateSourceData": "0 0 19 * * 4#1",
+        "UpdateSourceArgs": "say \"Server map wipe in 1 hour!\"",
+        "UpdateSourceConditionSetting": "AutoWipeSchedule",
+        "UpdateSourceConditionValue": "true",
+        "SkipOnFailure": true
     }
 ]
