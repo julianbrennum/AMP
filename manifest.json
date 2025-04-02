@@ -1,8 +1,8 @@
 {
     "id": "0bb219d6-0255-4dff-b8e3-4e0c8139f617",
     "authors": ["julianbrennum"],
-    "origin": "hhttps://github.com/julianbrennum/AMP.git",
-    "url": "https://github.com/julianbrennum/AMP",
+    "origin": "https://github.com/julianbrennum/AMP.git",
+    "url": "https://github.com/julianbrennum/AMP/tree/main",
     "imagefile": "",
     "prefix": "julianbrennum",
     "repotype": "AppTemplates"
